@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đếm số lần bấm</title>
+</head>
+<body>
+  <p>Số lần bấm: <span id="soLan">0</span></p>
+  <button onclick="tangSo()">Bấm vào đây</button>
+
+  <script>
+    let dem = 0;
+
+    function tangSo() {
+      dem++;
+      document.getElementById("soLan").textContent = dem;
+    }
+  </script>
+</body>
+</html>
